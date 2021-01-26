@@ -13,4 +13,4 @@ const Floor = ({ nr, children }) => {
     );
 };
 
-export default Floor;
+export default React.memo(Floor);
