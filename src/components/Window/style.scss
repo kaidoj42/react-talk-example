@@ -1,0 +1,33 @@
+.house {
+    .window-frame {
+            background: #fff;
+            border: 2px solid #000;
+            width: 80px;
+            height: 80px;
+        .window {
+            transform-origin: left;
+            transition: all 0.5s ease-in-out;
+            background: #fff;
+            width: 80px;
+            height: 80px;
+            position: relative;
+            .vert-bar {
+                height: 100%;
+                width: 1px;
+                background: #000;
+                position: absolute;
+                left: 40px;
+            }
+            .hor-bar {
+                height: 1px;
+                width: 100%;
+                background: #000;
+                position: absolute;
+                top: 40px;
+            }
+            &.open {
+                transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+            }
+        }
+    }
+}
