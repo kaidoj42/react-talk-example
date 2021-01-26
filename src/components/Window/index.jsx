@@ -21,4 +21,4 @@ const Window = ({ open }) => {
     );
 };
 
-export default React.memo(Window);
+export default Window;

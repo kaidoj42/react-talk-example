@@ -20,4 +20,4 @@ const Door = ({ open }) => {
     );
 };
 
-export default React.memo(Door);
+export default Door;
