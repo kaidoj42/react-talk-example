@@ -13,6 +13,7 @@ const House = () => {
     <div className="container">
       <button onClick={() => setAllWindowsOpen(!allWindowsOpen)}>Toggle all windows</button>
       <button onClick={() => setAllDoorsOpen(!allDoorsOpen)}>Toggle all doors</button>
+      <strong style={{ marginLeft: 50}}>All the elements that change color are rerendered</strong>
       <div className="house">
         <Roof />
         <Floor nr="3">
